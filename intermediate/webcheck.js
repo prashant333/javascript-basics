@@ -9,7 +9,7 @@ let userCheck = function(myString){
 }
 
 let passwordCheck = function(myString){
-    if ((myString.includes('@')) && (myString.length > 6)) {
+    if ((myString.includes('@')) && (myString.length > 5)) {
         return true
     }
     return false
