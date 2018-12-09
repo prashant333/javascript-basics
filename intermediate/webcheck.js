@@ -1,5 +1,5 @@
 let useName = 'ravi123'
-let password = '123@121'
+let password = '123@#121'
 
 let userCheck = function(myString){
     if ((myString.includes(123)) && (myString.length > 6)) {
