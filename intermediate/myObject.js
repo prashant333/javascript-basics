@@ -23,13 +23,24 @@
 
 // using for in loop to access the object values
 
-let user = {
-    name : "John",
-    age : 30,
-    profession : "teaching" 
-}
-for (const key in user) {
-    console.log(key)
-    console.log(user[key])
-        
+// let user = {
+//     name : "John",
+//     age : 30,
+//     profession : "teaching"
+// }
+// for (const key in user) {
+//     console.log(key)
+//     console.log(user[key])
+//
+//     }
+
+// checking if object has any property.
+
+let myObject = {};
+function isEmpty(object) {
+    for(let x in object){
+        return false
     }
+    return true
+}
+console.log(isEmpty(myObject))
