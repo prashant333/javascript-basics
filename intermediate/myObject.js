@@ -6,10 +6,17 @@
 // console.log(`New YouTube video on javaScript named ${myYouTubeVideo.title} by ${myYouTubeVideo.author}`)
 
 // will work in browser.
-let fruit = prompt("Which fruit to buy?", "apple");
+// let fruit = prompt("Which fruit to buy?", "apple");
 
-let bag = {
-  [fruit]: 5, // the name of the property is taken from the variable fruit
-};
+// let bag = {
+//   [fruit]: 5, // the name of the property is taken from the variable fruit
+// };
 
-alert( bag.apple ); // 5 if fruit="apple"
+// alert( bag.apple ); // 5 if fruit="apple"
+
+// aceesing object
+
+let user = {
+    age :30,
+}
+console.log("name" in user)
