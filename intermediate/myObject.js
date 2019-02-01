@@ -16,7 +16,20 @@
 
 // aceesing object
 
+// let user = {
+//     age :30,
+// }
+// console.log("name" in user)
+
+// using for in loop to access the object values
+
 let user = {
-    age :30,
+    name : "John",
+    age : 30,
+    profession : "teaching" 
 }
-console.log("name" in user)
+for (const key in user) {
+    console.log(key)
+    console.log(user[key])
+        
+    }
