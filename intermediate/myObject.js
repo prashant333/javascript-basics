@@ -34,13 +34,22 @@
 //
 //     }
 
-// checking if object has any property.
+// checking if object has any property, method = 1
 
 let myObject = {};
+// function isEmpty(object) {
+//     for(let x in object){
+//         return false
+//     }
+//     return true
+// }
+console.log(isEmpty(myObject))
+
+// method = 2
+
 function isEmpty(object) {
-    for(let x in object){
-        return false
+    if (Object.keys(object).length == 1) {
+        return false;
     }
     return true
 }
-console.log(isEmpty(myObject))
