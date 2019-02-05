@@ -5,7 +5,6 @@ for (let i = 0; i < s.length; i++) {
     for (j; j < t.length; j++) {
         if (t[j]==s[i]) {
             j=j+1
-            break
         }
         break
     }
