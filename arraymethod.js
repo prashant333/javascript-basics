@@ -22,7 +22,7 @@ console.log(numbers)
 numbers.splice(1,2,'something')
 console.log(numbers)
 
-// split and join a given string 
+// split and join a given string (camelCasing)
 let str = 'hello how are you'
 let name = str.split(' '); //creates an array of string
 let x = name.map((item, index)=> index ==0 ? item:item[0].toUpperCase()+item.slice(1))
