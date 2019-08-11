@@ -32,3 +32,14 @@ calc.read();
 alert(calc.sum());
 alert(calc.mul());
 
+// power function
+
+function getPow(a,b) {
+    let i =0
+    while (i<=b) {
+        return value = a*a
+    }
+   
+}
+console.log(getPow(10,2))
+
