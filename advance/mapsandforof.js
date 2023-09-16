@@ -15,8 +15,8 @@ var sam={
 }
 let user= new Map()
 
-user.set('john', john)
-user.set('marry', marry)
+user.set('Prashant', john)
+user.set('Marry', marry)
 user.set('sam', sam)
 
 // console.log(user)
