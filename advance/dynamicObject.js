@@ -10,6 +10,6 @@ function updatePeople(key, value){
     people[key] = value; 
 }
 
-updatePeople('name', 'Nikshit')
+updatePeople('name', 'Sachin')
 
 console.log(people)
