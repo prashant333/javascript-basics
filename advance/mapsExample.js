@@ -38,6 +38,6 @@ console.log(new_MapPeople)
 
 console.log("*****************************new concept********************")
 people.forEach((element)=>{
-    element.value = false
+    delete element.value // to delete a property from object
 })
 console.log(people)
