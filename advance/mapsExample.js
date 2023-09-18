@@ -35,3 +35,9 @@ let new_MapPeople = people.map((person)=>{
 
 console.log("Type of returned data is:",typeof(new_MapPeople))
 console.log(new_MapPeople)
+
+console.log("*****************************new concept********************")
+people.forEach((element)=>{
+    element.value = false
+})
+console.log(people)
