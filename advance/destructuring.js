@@ -52,10 +52,15 @@ const bob = {
 };
 
 // 1. accessing values by property name.
-// const {first, last,city} = bob
-// console.log(first, last, city)
+const {first, last,city} = bob
+console.log(first, last, city)
 
 // 2. accessing values by property name using alias.
 
-const{first:firstName, last, city} = bob
-console.log(firstName, last, city)
+const{first:firstName, last:lastName, city:City} = bob
+console.log(firstName, lastName, City)
+
+// 3. Destructuring nested Object
+
+const {last:LastName, siblings:{sister}} = bob
+console.log(sister)
