@@ -1,4 +1,5 @@
 // Accessing values from array or objects using destructuring method.
+// Order of destructuring matters in array, ie - elements are fetched in the same order as they are present in an arry.
 
 
 const fruits = ['orange', 'banana', 'lemon'];
@@ -29,9 +30,32 @@ console.log(Ram, Radha, Lakhan)
 
 // swapping variables in javascript without using temp variable. 
 
-let first = "Ram";
-let second = "Shyam";
+// let first = "Ram";
+// let second = "Shyam";
 
-[second, first] = [first, second]
+// [second, first] = [first, second]
 
-console.log(first, second)
+// console.log(first, second)
+
+
+console.log("************ Object Destructuring ***************")
+
+// order of properties fetched dosen't matter in case of Object destructuring. 
+
+const bob = {
+    first: 'bob',
+    last: 'sanders',
+    city: 'chicago',
+    siblings: {
+      sister: 'jane',
+    },
+};
+
+// 1. accessing values by property name.
+// const {first, last,city} = bob
+// console.log(first, last, city)
+
+// 2. accessing values by property name using alias.
+
+const{first:firstName, last, city} = bob
+console.log(firstName, last, city)
