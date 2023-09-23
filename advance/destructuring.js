@@ -26,3 +26,12 @@ console.log(hi, hello, bye, good, nice)
 
 const[Ram, ,Radha, ,Lakhan] = friends
 console.log(Ram, Radha, Lakhan)
+
+// swapping variables in javascript without using temp variable. 
+
+let first = "Ram";
+let second = "Shyam";
+
+[second, first] = [first, second]
+
+console.log(first, second)
