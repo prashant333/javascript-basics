@@ -12,3 +12,13 @@ function capitalize(string){
 }
 
 console.log(capitalize(givenString))
+
+// Method 2.
+// Using map function
+
+words = givenString.split(" ")
+
+console.log(words.map((word)=>{
+    return word[0].toUpperCase() + word.substring(1);
+}).join(" "))
+
