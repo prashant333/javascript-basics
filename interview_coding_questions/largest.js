@@ -14,13 +14,15 @@ console.log(Math.max(...new_number))
 // Method 2.  
 
 function largestNumber(arr){
-    return arr.reduce((largest, current) =>{  // use of {} makes a difference in output of the result,
+    return arr.reduce((largest, current) =>(  // use of {} makes a difference in output of the result,
     // if we use () instead of {}, we get a proper result.
         (current> largest? current:largest)
-}, [])
+    ), [])
 }
 
-console.log(largestNumber(new_number))
+let output = largestElement(new_number)
+console.log(typeof(output))
+console.log(output)
 
 // GeeksforGeeks example
 
